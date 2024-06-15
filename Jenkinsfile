@@ -31,17 +31,18 @@ pipeline {
             steps{
                 sh''
             }
+         }
     }
     post { 
-        always { 
+          always { 
             echo 'I will always say Hello again!'
         }
-        success { 
+          success { 
             echo 'I will run when pipeline is success'
         }
-        failure { 
+          failure { 
             echo 'I will run when pipeline is failure'
         }
-    }
-}
+      }
+   
 }
